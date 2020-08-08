@@ -7,6 +7,9 @@ Final class project for INFO2302.
 ## Coronavirus Symptoms Graphics
 https://pngtree.com/freepng/cold-sick-cough-flu-symptoms-masks-girl-illustration_5355498.html
 
+## How to Prevent and Avoid COVID19 Graphic
+https://pngtree.com/freepng/infograpics-how-to-prevent-and-avoid-covid-19_5345321.html
+
 ## JavaScript Horizontal News Ticker
 https://codepen.io/noelietrex/pen/ZGGoZM
 
@@ -19,3 +22,8 @@ https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp
 ## COVID-19 Animated Videos
 All videos are from the official Ministry of Health Malaysia YouTube channel: https://www.youtube.com/channel/UCNL1-ue2U6JwXTDSTkNvjuw
 
+## COVID-19 Everyday Prevention Actions Audio MP3
+https://www.cdc.gov/coronavirus/2019-ncov/communication/public-service-announcements.html
+
+## The JavaScript COVID19 Matching Game is based on the script found here:
+https://marina-ferreira.github.io/projects/js/memory-game/
