@@ -1,3 +1,7 @@
+#ahlam-container {
+    margin-bottom: 3em;
+}
+
 section h1 {
     background-color: maroon;
     width: 50%;
@@ -106,3 +110,7 @@ section table {background-color: rgba(255, 255, 255, 0.5);}
   
 /* To override original footer settings */
 footer {position: initial;}
+
+.border {background: maroon;}
+.btn {background: maroon;}
+.social-media a:hover {color: maroon;}
