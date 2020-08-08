@@ -2,7 +2,10 @@
 Final class project for INFO2302.
 
 
-Sources and References:
+# Sources and References:
+
+## Coronavirus Symptoms Graphics
+https://pngtree.com/freepng/cold-sick-cough-flu-symptoms-masks-girl-illustration_5355498.html
 
 ## JavaScript Horizontal News Ticker
 https://codepen.io/noelietrex/pen/ZGGoZM
