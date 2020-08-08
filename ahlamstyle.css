@@ -104,3 +104,5 @@ section table {background-color: rgba(255, 255, 255, 0.5);}
     animation-duration: 2s;
   }
   
+/* To override original footer settings */
+footer {position: initial;}
