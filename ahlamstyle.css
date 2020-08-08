@@ -27,6 +27,8 @@ section table, section p, section ul, section ol {
     width: 60%;
 }
 
+section li {margin-left: 1em;}
+
 section table {background-color: rgba(255, 255, 255, 0.5);}
       
 .image-box {
