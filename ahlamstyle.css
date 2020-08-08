@@ -89,6 +89,7 @@ section table {background-color: rgba(255, 255, 255, 0.5);}
   #advice {
     height: 35px;
     background-color: black;
+    padding-bottom: 1px;
   }
 
   .ticker p {
