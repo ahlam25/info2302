@@ -14,7 +14,7 @@ section table, section p {
     width: 60%;
 }
 
-section p {padding: }
+section p {padding: 1em;}
       
 .image-box {
   position: relative;
