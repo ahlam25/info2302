@@ -87,20 +87,16 @@ section table {background-color: rgba(255, 255, 255, 0.5);}
   }
 
   #advice {
-    height: 30px;
+    height: 35px;
     background-color: black;
-  }
-
-  .ticker {
-    overflow: hidden;
   }
 
   .ticker p {
     position: absolute;
-    top: 0;
     white-space: nowrap;
     width: auto;
     color: white;
+    margin-top: 15px;
   }
 
   .ticker a {
