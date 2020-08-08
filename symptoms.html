@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <style>
-      
+      /*
       .arow {display: flex;}
       .acol {flex: 33.33%; padding: 5px;}
+      */
+      .acol {float: left; width: 33.33%; padding: 5px;}
+      .arow::after {content: ""; clear: both; display: table;}
       
       .image-box {
          position: relative;
