@@ -29,7 +29,7 @@ section p {padding: 1em;}
 .overlay {
   position: absolute;
   bottom: 100%;
-  left: 0;a
+  left: 0;
   right: 0;
   background-color: maroon;
   overflow: hidden;
