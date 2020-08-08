@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>symptoms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="inner-width">
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+        <i class="menu-toggle-btn fas fa-bars"></i>
+        <nav class="navigation-menu">
+          <a href="#"><i class="fas fa-home home"></i> Home</a>
+          <a href="#"><i class="fas fa-align-left News"></i> News Room</a>
+          <a href="#"><i class="fab fa-buffer history"></i> History</a>
+          <a href="#"><i class="fas fa-users about"></i> About Us</a>
+          <a href="#"><i class="fas fa-headset emergencies"></i> Emergeinces</a>
+
+      </div>
+    </header>
+    <div class="side">
+      <a href="tips.html" style="background:#fc5c65;">tips</a>
+    </div>
+
+<section>
+<table>
+  <th><img src="dry.png" alt="dry"  class="image" width="190" height="190"></th>
+   <th><img src="fatigue.png" alt="fatigue" width="190" height="190"></th>
+   <th><img src="fever2.png" alt="fever2" width="190" height="190"></th>
+ </tr>
+
+ <tr>
+   <td><img src="headache.png" alt="headache"  width="190" height="190"></td>
+   <td><img src="bodyaches.png" alt="bodyaches"  width="190" height="190"></td>
+   <td><img src="shortnessofbreath.png" alt="shortnessofbreath"  width="190" height="190"></td>
+
+ </tr>
+ </table>
+
+
+</section>
+
+
+
+
+
+<div class = "fluVScovid">
+  <h1> difference between flu and covid-19</h1>
+  <p> Influenza (Flu) and COVID-19 are both contagious respiratory illnesses, but they are caused by different viruses. COVID-19 is caused by infection with a new coronavirus (called SARS-CoV-2) and flu is caused by infection with influenza viruses. Because some of the symptoms of flu and COVID-19 are similar, it may be hard to tell the difference between them based on symptoms alone, and testing may be needed to help confirm a diagnosis. Flu and COVID-19 share many characteristics.</p>
+</div>
+
+    <div id="advice">
+        <div class="ticker">
+          <li><p><a href="##">Stay Safe, Stay Healthy.</a></p></li>
+          <li><p><a href="##">Protect yourself and other from the spread COVID-19 .</a></p></li>
+            <li><p><a href="##">Wear your mask please!.</a></p></li>
+        </div>
+    </div>
+<footer>
+<div class="footer-cont">
+  <div class="left-col">
+    <div class="social-media">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+<p class=rights-text>© Created By Raneem, All Right Reserved!</p>
+  </div>
+  <div class="right-col">
+    <h1>Our News</h1>
+    <div class="border"></div>
+    <p>Enter Your Email To Get News And Updates.</p>
+    <form class="news-form" action="index.html" method="post">
+      <input type="text" class="txtb" placeholder="Enter Your Email">
+      <input type="Submit" class="btn" value="Submit">
+    </form>
+  </div>
+</div>
+</footer>
+
+
+
+    <script type="text/javascript">
+      $(".menu-toggle-btn").click(function(){
+        $(this).toggleClass("fa-times");
+        $(".navigation-menu").toggleClass("active");
+      });
+
+
+      $(document).ready(function() {
+  var block_arr = $('.ticker li p').map(function() { return $(this).get(0);}).toArray();
+
+  var ticker_item = $(block_arr[0]);
+  $(".ticker").html(ticker_item);
+  var ticker_width = $(".ticker").width();
+  var text_x = ticker_width;
+
+  console.log(block_arr.indexOf(ticker_item.get(0)));
+  console.log(block_arr.length);
+
+  scroll_ticker = function() {
+    text_x--;
+    ticker_item.css("left", text_x);
+    if (text_x < -1 * ticker_item.width()) {
+      ticker_item = $(block_arr[(block_arr.indexOf(ticker_item.get(0)) + 1 == block_arr.length) ? 0 : block_arr.indexOf(ticker_item.get(0)) + 1]);
+      ticker_item.css("left", text_x);
+      $(".ticker").html(ticker_item);
+      text_x = ticker_width;
+    }
+  }
+  setInterval(scroll_ticker, 7);
+});
+
+    </script>
+  </body>
+</html>
