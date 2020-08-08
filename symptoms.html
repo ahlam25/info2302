@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <style>
+      .image-box {
+         position: relative;
+         width: 50%;
+      }
       .hover-title {
         display: block;
         width: 100%;
@@ -29,6 +33,17 @@
         bottom: 0;
         height: 100%;
       }
+      .symptom {
+       color: white;
+       font-size: 20px;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+       text-align: center;
+}
 
 
         
@@ -56,7 +71,7 @@
 <section>
 <table>
   <tr>
-  <td>
+  <td class="image-box">
     <img src="images/dry.png" alt="dry" class="hover-title" width="190" height="190">
       <div class="overlay">
         <div class="symptom">Dry Cough</div>
