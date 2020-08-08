@@ -89,9 +89,9 @@
     
     <div id="advice">
       <div class="ticker">
-        <li><p>Stay Safe, Stay Healthy!</p></li>
-        <li><p>Protect yourself and others from the spread COVID-19!</p></li>
-        <li><p>Wear your mask please!</p></li>
+        <p>Stay Safe, Stay Healthy!</p>
+        <p>Protect yourself and others from the spread COVID-19!</p>
+        <p>Wear your mask please!</p>
       </div>
     </div>
       
@@ -128,7 +128,7 @@
       
       
       $(document).ready(function() {
-        var block_arr = $('.ticker li p').map(function() { return $(this).get(0);}).toArray();
+        var block_arr = $('.ticker p').map(function() { return $(this).get(0);}).toArray();
         
         var ticker_item = $(block_arr[0]);
         $(".ticker").html(ticker_item);
