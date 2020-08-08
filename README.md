@@ -1,2 +1,2 @@
-# info2302
+# INFO2302
 Final class project for INFO2302.
