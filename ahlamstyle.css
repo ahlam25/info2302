@@ -42,6 +42,7 @@ section p {padding: 1em;}
   bottom: 0;
   height: 100%;
 }
+
 .symptom {
   color: white;
   font-size: 20px;
@@ -73,20 +74,11 @@ section p {padding: 1em;}
   }
 
   #advice {
-    position: absolute;
-    width: 100%;
     height: 30px;
-    left: 0;
-    bottom: 90px;
     background-color: black;
-
   }
+
   .ticker {
-    position: absolute;
-    top: 25%;
-    left: 40px;
-    right: 10px;
-    bottom: 10%;
     overflow: hidden;
   }
 
@@ -96,7 +88,6 @@ section p {padding: 1em;}
     white-space: nowrap;
     width: auto;
     color: white;
-
   }
 
   .ticker a {
