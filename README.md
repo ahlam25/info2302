@@ -7,8 +7,6 @@ Final class project for INFO2302.
 ## Coronavirus Symptoms Graphics
 https://pngtree.com/freepng/cold-sick-cough-flu-symptoms-masks-girl-illustration_5355498.html
 
-## How to Prevent and Avoid COVID19 Graphic
-https://pngtree.com/freepng/infograpics-how-to-prevent-and-avoid-covid-19_5345321.html
 
 ## JavaScript Horizontal News Ticker
 https://codepen.io/noelietrex/pen/ZGGoZM
@@ -27,3 +25,7 @@ https://www.cdc.gov/coronavirus/2019-ncov/communication/public-service-announcem
 
 ## The JavaScript COVID19 Matching Game is based on the script found here:
 https://marina-ferreira.github.io/projects/js/memory-game/
+
+## Memory Card Graphics
+The card faces were made from this image: https://pngtree.com/freepng/coronavirus-2019-ncov-infographic-prevention-tips-with-man-vector-illustration_5352558.html
+The card back was custom designed based on the card faces.
