@@ -156,6 +156,38 @@
     
     
     <script type="text/javascript">
+      // memory game
+      const cards = document.querySelectorAll('.memory-card');
+
+function flipCard() {
+  this.classList.toggle('flip');
+}
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+       const cards = document.querySelectorAll('.memory-card');
+
+ let hasFlippedCard = false;
+
+ let firstCard, secondCard;
+
+  function flipCard() {
+
+   this.classList.toggle('flip');
+
+   this.classList.add('flip');
+
+   if (!hasFlippedCard) {
+
+     hasFlippedCard = true;
+
+     firstCard = this;
+
+   }
+  }
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+      
+      // ticker
       $(".menu-toggle-btn").click(function(){
         $(this).toggleClass("fa-times");
         $(".navigation-menu").toggleClass("active");
