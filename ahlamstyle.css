@@ -30,7 +30,10 @@ section table, section p, section ul, section ol {
 section li {margin-left: 1em;}
 
 section table {background-color: rgba(255, 255, 255, 0.5);}
-      
+
+.ahlam-section-2 p {margin-bottom: 0;}
+.ahlam-section-2 ul, .ahlam-section-2 ol {margin-top: 0;}
+
 .image-box {
   position: relative;
 }
