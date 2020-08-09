@@ -110,10 +110,10 @@ section table {background-color: rgba(255, 255, 255, 0.5);}
   height: calc(25% - 10px);
   margin: 5px;
   position: relative;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
 .memory-card:active {
@@ -137,9 +137,6 @@ section table {background-color: rgba(255, 255, 255, 0.5);}
 .front-face {
   transform: rotateY(180deg);
 }
-
-
-
 
 /** Ticker **/
   #advice {
