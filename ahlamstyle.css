@@ -129,10 +129,8 @@ section table {background-color: rgba(255, 255, 255, 0.5);}
 .back-face {
   width: 100%;
   height: 100%;
-  padding: 20px;
   position: absolute;
   border-radius: 5px;
-  background: #1C7CCC;
   backface-visibility: hidden;
 }
 
