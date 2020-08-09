@@ -58,56 +58,56 @@
       <h1>Play an Interactive Matching Game<br>of COVID-19 Safety Tips</h1>
       <!-- COVID19 JavaScript Matching Game -->
         <section class="memory-game">
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card1">
             <img class="front-face" src="images/card-01.png" alt="Card 1">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card1">
             <img class="front-face" src="images/card-01.png" alt="Card 1">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
 
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card2">
             <img class="front-face" src="images/card-02.png" alt="Card 2">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card2">
             <img class="front-face" src="images/card-02.png" alt="Card 2">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
 
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card3">
             <img class="front-face" src="images/card-03.png" alt="Card 3">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card3">
             <img class="front-face" src="images/card-03.png" alt="Card 3">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
 
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card4">
             <img class="front-face" src="images/card-04.png" alt="Card 4">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card4">
             <img class="front-face" src="images/card-04.png" alt="Card 4">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
 
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card5">
             <img class="front-face" src="images/card-05.png" alt="Card 5">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card5">
             <img class="front-face" src="images/card-05.png" alt="Card 5">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
 
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card6">
             <img class="front-face" src="images/card-06.png" alt="Card 6">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
-          <div class="memory-card">
+          <div class="memory-card" data-framework="card6">
             <img class="front-face" src="images/card-06.png" alt="Card 6">
             <img class="back-face" src="images/card-back.png" alt="Memory Card">
           </div>
@@ -159,31 +159,62 @@
       // memory game
       const cards = document.querySelectorAll('.memory-card');
 
+let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard, secondCard;
+
 function flipCard() {
-  this.classList.toggle('flip');
+  if (lockBoard) return;
+  if (this === firstCard) return;
+
+  this.classList.add('flip');
+
+  if (!hasFlippedCard) {
+    hasFlippedCard = true;
+    firstCard = this;
+
+    return;
+  }
+
+  secondCard = this;
+  checkForMatch();
 }
 
-cards.forEach(card => card.addEventListener('click', flipCard));
-       const cards = document.querySelectorAll('.memory-card');
+function checkForMatch() {
+  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
- let hasFlippedCard = false;
+  isMatch ? disableCards() : unflipCards();
+}
 
- let firstCard, secondCard;
+function disableCards() {
+  firstCard.removeEventListener('click', flipCard);
+  secondCard.removeEventListener('click', flipCard);
 
-  function flipCard() {
+  resetBoard();
+}
 
-   this.classList.toggle('flip');
+function unflipCards() {
+  lockBoard = true;
 
-   this.classList.add('flip');
+  setTimeout(() => {
+    firstCard.classList.remove('flip');
+    secondCard.classList.remove('flip');
 
-   if (!hasFlippedCard) {
+    resetBoard();
+  }, 1500);
+}
 
-     hasFlippedCard = true;
+function resetBoard() {
+  [hasFlippedCard, lockBoard] = [false, false];
+  [firstCard, secondCard] = [null, null];
+}
 
-     firstCard = this;
-
-   }
-  }
+(function shuffle() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
+  });
+})();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
       
